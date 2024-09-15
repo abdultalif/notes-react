@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(225, 6%, 13%);
+  color: white;
+  height: 100%;
+}
+
+textarea {
+  height: 120px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.note-app__header {
+  position: fixed;
+  width: 100%;
+}
+
+.note-app__header--nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px;
+  border-bottom: 1px solid #aaa;
+}
+
+.note-app__header--nav h1 {
+  margin: 8px 0;
+  flex: 1;
+  font-size: 2rem;
+  color: white;
+}
+
+.note-app__header--search {
+  padding: 12px;
+  width: 280px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.note-app__body {
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 12px;
+}
+
+.note-app__body h2 {
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.note-item__d-none {
+  display: none;
+}

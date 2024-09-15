@@ -1,0 +1,46 @@
+.noteform {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 48px;
+
+  &__charLimit {
+    font-size: 14px;
+    text-align: right;
+    color: #aaa;
+  }
+
+  &__errorMessage {
+    color: #ff4d4f;
+    background-color: #fff1f0;
+    border: 1px solid #ffa39e;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  &__input {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 175px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

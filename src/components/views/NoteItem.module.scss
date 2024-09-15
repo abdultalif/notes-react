@@ -1,0 +1,79 @@
+.noteItem {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+
+  &__content {
+    padding: 12px;
+    flex: 1;
+
+    &__title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 4px;
+    }
+
+    &__date {
+      font-size: 12px;
+      margin-bottom: 8px;
+      color: #aaa;
+    }
+
+    &__body {
+      font-size: 14px;
+    }
+  }
+
+  &__action {
+    display: flex;
+
+    &__deleteButton {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-top: 1px solid #aaa;
+      padding: 12px 0;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      border-right: 1px solid #aaa;
+      color: #ff5f52;
+
+      &:hover {
+        background-color: rgba(255, 95, 82, 0.1);
+        color: #b00020;
+      }
+    }
+
+    &__archiveButton {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-top: 1px solid #aaa;
+      padding: 12px 0;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      color: #fff263;
+
+      &:hover {
+        background-color: rgba(255, 242, 99, 0.1);
+        color: #c49000;
+      }
+    }
+  }
+}
