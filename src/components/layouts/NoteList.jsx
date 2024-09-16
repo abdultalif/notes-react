@@ -1,4 +1,4 @@
-import NoteItem from "../views/Noteitem";
+import NoteItem from "../views/NoteItem";
 import styles from "./NoteList.module.scss";
 
 const NoteList = ({ notes, noteItemRefs, setNotes, setArcive, arcive }) => {
